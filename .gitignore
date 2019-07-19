@@ -107,5 +107,5 @@ venv.bak/
 .vscode/
 
 # logs and database
-*.log
 *.db
+error.log
