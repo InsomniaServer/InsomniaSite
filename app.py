@@ -1,6 +1,7 @@
 import json
 
 import cherrypy as cp
+import mistune as mst
 
 import user_database as users
 
@@ -17,12 +18,15 @@ class Webapp(object):
             actus=json.load(datafile)["actus"]
         actus_html=""
         for actu in actus:
+            actu_body = ""
+            with open(actu["body"]) as content:
+                actu_body=mst.markdown(content.read())
             actus_html = actus_html + """<div class='actu'>
             <h3>{title}</h3>
             <p>par {author} le {date}</p>
             {body}
             </div>""".format(title=actu['title'], author=actu['author'],
-                             date=actu['date'],body=actu['body'])
+                             date=actu['date'],body=actu_body)
         if 'logged_as' not in cp.session or cp.session['logged_as'] == None:
             htmlContent = ""
             with open("pages/home/not-connected.html") as page:

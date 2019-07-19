@@ -1,3 +1,7 @@
 127.0.0.1 - - [19/Jul/2019:10:11:35] "GET / HTTP/1.1" 200 1621 "" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
 127.0.0.1 - - [19/Jul/2019:10:11:35] "GET /static/style.css HTTP/1.1" 200 935 "http://127.0.0.1:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
 127.0.0.1 - - [19/Jul/2019:10:11:35] "GET /favicon.ico HTTP/1.1" 200 1406 "" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
+127.0.0.1 - - [19/Jul/2019:13:54:22] "GET / HTTP/1.1" 200 737 "http://127.0.0.1:8080/signup" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
+127.0.0.1 - - [19/Jul/2019:13:54:22] "GET /static/style.css HTTP/1.1" 200 967 "http://127.0.0.1:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
+127.0.0.1 - - [19/Jul/2019:13:54:55] "GET / HTTP/1.1" 200 783 "http://127.0.0.1:8080/signup" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
+127.0.0.1 - - [19/Jul/2019:13:54:55] "GET /static/style.css HTTP/1.1" 304 - "http://127.0.0.1:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
