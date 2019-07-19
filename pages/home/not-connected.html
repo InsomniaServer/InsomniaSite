@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!--Titre de l'onglet-->
     <title>Accueil</title>
-
-    <!--Utilisation de caractères spéciaux-->
     <meta charset="utf-8">
     <link rel="stylesheet" href="/static/style.css">
 </head>
@@ -12,16 +9,17 @@
 <body>
 <a href="/" class="bannerlink">
     <header>
-        <!--Titre de la page-->
         <h1>Accueil</h1>
     </header>
 </a>
     <nav>
-        <!--Liens vers d'autre page-->
         <a href="/">Accueil</a>
-        <a href="/issues">Report de bugs</a>
+        <a href="https://github.com/InsomniaServer/Insomnia/issues">Report de bugs</a>
         <a href="/signup">S'inscrire</a>
         <a href="/login">Se connecter</a>
     </nav>
+    <div id="actus">
+        {actus}
+    </div>
 </body>
 </html>
