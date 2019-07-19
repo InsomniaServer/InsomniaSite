@@ -62,9 +62,9 @@ p
     font-size: 1.2em;
     color: red;
 }
-.actus{
-    background: #494a44;
-}
+
 .actu{
-    background: #272822;
+    background: #494a44;
+    margin: 10px;
+    padding: 10px;
 }

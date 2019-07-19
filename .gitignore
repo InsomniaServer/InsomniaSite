@@ -109,3 +109,4 @@ venv.bak/
 # logs and database
 *.db
 error.log
+access.log

@@ -19,7 +19,7 @@ class Webapp(object):
         actus_html=""
         for actu in actus:
             actu_body = ""
-            with open(actu["body"]) as content:
+            with open("actus/" + actu["body"]) as content:
                 actu_body=mst.markdown(content.read())
             actus_html = actus_html + """<div class='actu'>
             <h3>{title}</h3>

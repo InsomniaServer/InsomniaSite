@@ -45,7 +45,7 @@ cherrypy.config.update({
     'log.access_file': 'access.log',
     'log.error_file': 'error.log'
 })
-
+cherrypy.config.update({'server.socket_port': 81})
 # ---------------------------
 # Lancement des diverse partie du programme
 # ---------------------------
