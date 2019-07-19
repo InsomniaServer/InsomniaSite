@@ -71,4 +71,3 @@ class Webapp(object):
             elif cpwd != pwd: error_message = "Erreur - Le mot de passe de confirmation n'est pas le même que le mot de passe choisi."
             elif users.checkUserExists(mail): "Erreur - Addresse E-Mail déjà utilisée."
             return self.signup(fail=error_message)
-
