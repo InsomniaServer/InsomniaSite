@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!--
+    Copyright (C) 2019  Antoine Combet
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+  <meta charset="utf-8">
+    <title>{Nom_site} - Connexion</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <a href="/" class="bannerlink">
+    <header>
+      <h1>{Nom_site} - Connexion</h1>
+    </header>
+  </a>
+<!--
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+-->
+    <p class="fail_message">{fail}</p>
+    <div class="account_box">
+        <form method="POST" action="/login_status">
+            Email :<br />
+            <input type="email" name="mail"/><br />
+            Mot de Passe :<br />
+            <input type="password" name="pwd"/><br />
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>

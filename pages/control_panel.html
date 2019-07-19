@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <a href="/" class="bannerlink">
+            <header>
+                <h1></h1> 
+            </header>
+        </a>
+        <nav>
+            <a href="/">Accueil</a>
+            <a href="/account">{name}</a>
+            <a href="/disconect">Se d&eacute;connecter</a>
+        </nav>
+        <form class="cpbutton" action="/startserv">
+            <input type="submit" text="Démarrer le serveur MC" />
+        </form>
+        <form class="cpbutton" action="/get_logs_mc">
+            <input type="submit" text="Obtenir les logs de Minecraft" />
+        </form>
+        <form class="cpbutton" action="/get_crash_report">
+            <input type="submit" text="Récupérer le crash report" />
+        </form>
+    </body>
+</html>
