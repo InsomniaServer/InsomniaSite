@@ -1,5 +1,3 @@
-import json
-import time
 
 import cherrypy as cp
 
@@ -18,13 +16,13 @@ class Webapp(object):
             with open("pages/home/not-connected.html") as page:
                 for line in page:
                     htmlContent = htmlContent + line
-            return htmlContent.format(img_mv="",img_rec="")
+            return htmlContent.format(actus="")
         else:
             htmlContent = ""
             with open("pages/home/connected.html") as page:
                 for line in page:
                     htmlContent = htmlContent + line
-            return htmlContent.format(name=users.getUserById(cp.session['logged_as'])[0]["name"],img_rec="", img_mv="")
+            return htmlContent.format(name=users.getUserById(cp.session['logged_as'])[0]["name"],actus="")
 
     @cp.expose
     def login(self,fail=""):
