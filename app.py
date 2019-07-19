@@ -72,10 +72,3 @@ class Webapp(object):
             elif users.checkUserExists(mail): "Erreur - Addresse E-Mail déjà utilisée."
             return self.signup(fail=error_message)
 
-    @cp.expose(alias="bug-report")
-    def issues(self):
-        if 'logged_as' not in cp.session or cp.session['logged_as'] is None:
-            page = "pages/issues/not-connected.html"
-        else:
-            page = "pages/issues/connected/html"
-        return open(page)
