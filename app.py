@@ -13,28 +13,28 @@ class Webapp(object):
     @cp.expose(alias="home")
     def index(self):
         actus=[]
-        with open data.json as datafile:
+        with open("data.json") as datafile:
             actus=json.load(datafile)["actus"]
         actus_html=""
         for actu in actus:
-            actu_html = acth_html + """<div class='actu'>
+            actus_html = actus_html + """<div class='actu'>
             <h3>{title}</h3>
             <p>par {author} le {date}</p>
             {body}
-            </div>""".format(title=actu['title'], author=actu[author],
+            </div>""".format(title=actu['title'], author=actu['author'],
                              date=actu['date'],body=actu['body'])
         if 'logged_as' not in cp.session or cp.session['logged_as'] == None:
             htmlContent = ""
             with open("pages/home/not-connected.html") as page:
                 for line in page:
                     htmlContent = htmlContent + line
-            return htmlContent.format(actus=actu_html)
+            return htmlContent.format(actus=actus_html)
         else:
             htmlContent = ""
             with open("pages/home/connected.html") as page:
                 for line in page:
                     htmlContent = htmlContent + line
-            return htmlContent.format(name=users.getUserById(cp.session['logged_as'])[0]["name"],actus=actu_html)
+            return htmlContent.format(name=users.getUserById(cp.session['logged_as'])[0]["name"],actus=actus_html)
 
     @cp.expose
     def login(self,fail=""):
