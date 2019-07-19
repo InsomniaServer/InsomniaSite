@@ -62,11 +62,9 @@ p
     font-size: 1.2em;
     color: red;
 }
-.cpbutton
-{
-
+.actus{
+    background: #494a44;
 }
-.cpbutton input
-{
-
+.actu{
+    background: #272822;
 }

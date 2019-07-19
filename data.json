@@ -1,0 +1,10 @@
+{
+    "actus": [
+        {
+            "title": "Actu de test",
+            "author": "Annwan",
+            "date": "19/07/2019",
+            "body": "<p>Ceci est une actu de test</p><p>Ne pas prendre en compte</p>"
+        }
+    ]
+}
